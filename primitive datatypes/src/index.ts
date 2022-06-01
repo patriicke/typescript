@@ -37,15 +37,18 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(2000, 4000);
 //Objects
 
-let employee: {
+type Employee = {
   readonly id: number;
   name: string;
   retire: (date: Date) => void;
-} = {
-  id: 1,
-    name: "",
-    retire: (date: Date) => {
-      console.log(date)
-  }
 };
 
+let employee: Employee = {
+  id: 1,
+  name: "",
+  retire: (date: Date) => {
+    console.log(date);
+  }
+};
+//These where we are going to include the typescript aliases to give our selves access to reuse it in many area
+//Type script aliases makes our code cleaner and understandable

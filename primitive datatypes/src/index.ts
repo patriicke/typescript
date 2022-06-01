@@ -4,3 +4,6 @@ let is_published = true;
 // let level;
 // level = 5;
 // level="a"
+function render(document: any) {
+    console.log(document)
+}

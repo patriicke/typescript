@@ -17,22 +17,35 @@ const arr: number[] = [1, 2, 3, 4];
 //tuple
 const person: [number, string] = [1, "Patrick"];
 //enums
-enum Size {
+const enum Size {
   Small = 1,
   Medium,
   Large
 }
 let mySize: Size = Size.Medium;
-console.log(mySize)
+console.log(mySize);
 //Functions
 //Typescript helps us to specify what types of returns we can give since it gives us an error if not
 //Nounused locals
 //noimplicity returns
 //Nounsed params
 
-function calculateTax(income: number, taxYear=2022): number {
-    if (taxYear < 2020)
-        return income*1.2;
-    return income*1.3
+function calculateTax(income: number, taxYear = 2022): number {
+  if (taxYear < 2020) return income * 1.2;
+  return income * 1.3;
 }
-calculateTax(2000,4000)
+calculateTax(2000, 4000);
+//Objects
+
+let employee: {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+} = {
+  id: 1,
+    name: "",
+    retire: (date: Date) => {
+      console.log(date)
+  }
+};
+

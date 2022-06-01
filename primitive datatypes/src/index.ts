@@ -24,3 +24,15 @@ enum Size {
 }
 let mySize: Size = Size.Medium;
 console.log(mySize)
+//Functions
+//Typescript helps us to specify what types of returns we can give since it gives us an error if not
+//Nounused locals
+//noimplicity returns
+//Nounsed params
+
+function calculateTax(income: number, taxYear=2022): number {
+    if (taxYear < 2020)
+        return income*1.2;
+    return income*1.3
+}
+calculateTax(2000,4000)

@@ -57,10 +57,28 @@ let employee: Employee = {
 //Unions are represented by a vertical slash in typescript
 //example
 
-function kgsTograms(weight:number|string): number {
+function kgsTograms(weight: number | string): number {
   if (typeof weight === "number") {
     return weight * 1000;
   } else {
     return parseInt(weight) / 1000;
   }
 }
+//Intersections in typescript
+//We can refer this to mathermatics where we can have somethings that comprises more than one thing and authomatically we are in the sets
+//We user & operator to indicate intersection
+
+type Draggable = {
+  drag: () => void;
+};
+
+type Resizable = {
+  resize: () => void;
+};
+
+type UIWidget = Resizable & Draggable;
+
+let textBox: UIWidget = {
+  drag: () => {},
+  resize: () => {}
+};

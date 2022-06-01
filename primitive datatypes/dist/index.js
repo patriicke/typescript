@@ -33,4 +33,17 @@ function kgsTograms(weight) {
         return parseInt(weight) / 1000;
     }
 }
+let textBox = {
+    drag: () => { },
+    resize: () => { }
+};
+let quantiry = 15;
+function greet(name) {
+    if (name) {
+        console.log(name.toUpperCase);
+    }
+    else {
+        console.log("Hola");
+    }
+}
 //# sourceMappingURL=index.js.map

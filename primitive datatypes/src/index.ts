@@ -89,3 +89,15 @@ type Quantity = 12 | 15;
 let quantiry: Quantity = 15;
 
 type Metric = "cm" | "inch";
+
+//Nullable types
+//Rembember giving a null value is strict by default in typescript since it can lead to many bugs hence we dont just use it but we cn configure it by making it nullable
+
+        
+function greet(name: string| null |undefined): void {
+  if (name) {
+    console.log(name.toUpperCase);
+  } else {
+    console.log("Hola");
+  }
+}

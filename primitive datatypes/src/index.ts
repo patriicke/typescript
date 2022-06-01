@@ -5,5 +5,6 @@ let is_published = true;
 // level = 5;
 // level="a"
 function render(document: any) {
-    console.log(document)
+  console.log(document);
 }
+const arr:number[] = [1, 2, 3, 4];

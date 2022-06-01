@@ -7,4 +7,6 @@ let is_published = true;
 function render(document: any) {
   console.log(document);
 }
-const arr:number[] = [1, 2, 3, 4];
+const arr: number[] = [1, 2, 3, 4];
+
+const person: [number, string] = [1, "Patrick"];

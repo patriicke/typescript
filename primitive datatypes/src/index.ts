@@ -82,3 +82,10 @@ let textBox: UIWidget = {
   drag: () => {},
   resize: () => {}
 };
+//Literal (exact, specific)
+
+type Quantity = 12 | 15;
+
+let quantiry: Quantity = 15;
+
+type Metric = "cm" | "inch";

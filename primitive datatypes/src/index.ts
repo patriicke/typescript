@@ -93,11 +93,30 @@ type Metric = "cm" | "inch";
 //Nullable types
 //Rembember giving a null value is strict by default in typescript since it can lead to many bugs hence we dont just use it but we cn configure it by making it nullable
 
-        
-function greet(name: string| null |undefined): void {
+function greet(name: string | null | undefined): void {
   if (name) {
     console.log(name.toUpperCase);
   } else {
     console.log("Hola");
   }
 }
+
+//Optional property access operator
+
+type Customer = {
+  birthday?: Date;
+};
+
+function getCustomer(id: number): Customer | null | undefined {
+  return id === 0 ? null : { birthday: new Date() };
+}
+
+const customer = getCustomer(1);
+console.log(customer?.birthday?.getFullYear());
+
+//Optional element access operator
+//customer?.[0]
+//Optional Call
+
+//Example let log:any = null
+//log?.('a);

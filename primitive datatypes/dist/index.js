@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 let sales = 123345565;
 let course = "TypeScript";
 let is_published = true;
@@ -46,4 +47,9 @@ function greet(name) {
         console.log("Hola");
     }
 }
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date() };
+}
+const customer = getCustomer(1);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear());
 //# sourceMappingURL=index.js.map

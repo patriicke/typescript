@@ -25,4 +25,12 @@ let employee = {
         console.log(date);
     }
 };
+function kgsTograms(weight) {
+    if (typeof weight === "number") {
+        return weight * 1000;
+    }
+    else {
+        return parseInt(weight) / 1000;
+    }
+}
 //# sourceMappingURL=index.js.map

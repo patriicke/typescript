@@ -52,3 +52,15 @@ let employee: Employee = {
 };
 //These where we are going to include the typescript aliases to give our selves access to reuse it in many area
 //Type script aliases makes our code cleaner and understandable
+
+//Unions
+//Unions are represented by a vertical slash in typescript
+//example
+
+function kgsTograms(weight:number|string): number {
+  if (typeof weight === "number") {
+    return weight * 1000;
+  } else {
+    return parseInt(weight) / 1000;
+  }
+}

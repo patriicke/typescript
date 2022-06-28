@@ -1,8 +1,8 @@
 import { useState } from "react";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="App">Hello</div>;
+  let number:any = 5;
+  number = "4";
+  return <div className="App">{number}</div>;
 }
 
 export default App;

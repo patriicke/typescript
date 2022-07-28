@@ -7,4 +7,3 @@ var Size;
 })(Size || (Size = {}));
 const mySize = Size.Medium;
 console.log(mySize);
-//# sourceMappingURL=enum.js.map

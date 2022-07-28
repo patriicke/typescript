@@ -4,4 +4,3 @@ const calculateTax = (income, taxYear) => {
         return income * 2;
     return income * 4;
 };
-//# sourceMappingURL=functions.js.map

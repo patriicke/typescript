@@ -32,3 +32,24 @@ const nameAgeMap: Record<string, number> = {
 };
 
 console.log(nameAgeMap.Patrick);
+
+// 4. Omit
+
+// Omit removes keys from an object type.
+
+// I have removed the fname and lname so I'll be left with providing the dob and age only.
+const thirdPerson: Omit<Per, "fname" | "lname"> = {
+  dob: new Date(),
+  age: 30
+};
+
+//Done with Omit
+
+// 5. Pick
+// Pick removes all but the specified keys from an object type.
+//Here is pick in action
+//The statements under this line show that we have picked fname and lname from the whole object, so the others are dropped
+const fourthPerson: Pick<Per, "fname" | "lname"> = {
+  fname: "Patrick",
+  lname: "NDAYAMBAJE"
+};

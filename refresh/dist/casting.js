@@ -1,5 +1,6 @@
 "use strict";
 let x = "hello";
 console.log(x.length);
-let y = 5;
+let y = "How are you doing";
 console.log(x.length);
+let z = "hello";

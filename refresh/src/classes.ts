@@ -12,3 +12,5 @@ class Person {
 
 const person = new Person("Patrick");
 console.log(person.getName());
+
+//I have also looked on interfaces, abstract classes and implementation and extendigs

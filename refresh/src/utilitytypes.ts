@@ -53,3 +53,12 @@ const fourthPerson: Pick<Per, "fname" | "lname"> = {
   fname: "Patrick",
   lname: "NDAYAMBAJE"
 };
+
+//6. ReturnType
+// ReturnType extracts the return type of a function type.
+
+type PointGenerator = () => { x: number; y: number };
+const point: ReturnType<PointGenerator> = {
+  x: 10,
+  y: 20
+};

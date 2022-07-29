@@ -7,8 +7,10 @@ console.log(createPairs<string, number>("hello", 23));
 //We can also use type aliases using generics
 
 type Multiply<T> = (v1: T, v2: T) => T;
+// type Multiply<T = number> = (v1: T, v2: T) => T;
 
 const multiply: Multiply<number> = (v1, v2) => v1 * v2;
+// const multiply: Multiply = (v1, v2) => v1 * v2;
 
 const multipliedNumber = multiply(5, 6);
 console.log(multipliedNumber);

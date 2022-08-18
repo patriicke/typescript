@@ -11,3 +11,15 @@ const nameAgeMap = {
     Kloos: 30
 };
 console.log(nameAgeMap.Patrick);
+const thirdPerson = {
+    dob: new Date(),
+    age: 30
+};
+const fourthPerson = {
+    fname: "Patrick",
+    lname: "NDAYAMBAJE"
+};
+const point = {
+    x: 10,
+    y: 20
+};

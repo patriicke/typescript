@@ -8,9 +8,14 @@ class Person {
   public getName() {
     return this.name;
   }
+  public setName(name: string) {
+    this.name = name;
+  }
 }
 
 const person = new Person("Patrick");
+person.setName("Kevin");
+person.getName();
 console.log(person.getName());
 
 //I have also looked on interfaces, abstract classes and implementation and extendigs
